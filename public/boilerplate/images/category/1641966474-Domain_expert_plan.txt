@@ -1,0 +1,12 @@
+1. User table - Add is_domain_expert field
+2.Domain expert approval on Backend
+3.Domain expert card on dashboard
+4.Product table - Add is_Kit flag
+5.Create new model - ProductKitItems { kit_id,product_id,quantity,margin(nullable),remarks(nullable)}
+Link new model to to Product.
+6.Create Kit inside domain expert
+7.Same as Product add (includes save as draft /publish)
+8.One section extra that is Adding other sellers product (which will go into ProductKitItems )
+9.For adding Products pop a modal with search bar
+10.Once the product/item selected show it in table format with fields like quantity remarks etc
+11.On submit save that in ProductKitItems.

@@ -15,7 +15,26 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('company')" :active="request()->routeIs('company')">
+                        {{ __('Company') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('category.index')" :active="request()->routeIs('category.index')">
+                        {{ __('Category') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+                        {{ __('User Management') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('roles.index')" :active="request()->routeIs('roles.index')">
+                        {{ __('Role Management') }}
+                    </x-nav-link>
+                    
                 </div>
+
+                
             </div>
 
             <!-- Settings Dropdown -->

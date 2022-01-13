@@ -10,6 +10,11 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 
+//redirect to '/login' when accessing '/'
+Route::get('/', function () {
+    return redirect(route('login'));
+})->middleware('guest');
+
 Route::get('/register', [RegisteredUserController::class, 'create'])
                 ->middleware('guest')
                 ->name('register');
