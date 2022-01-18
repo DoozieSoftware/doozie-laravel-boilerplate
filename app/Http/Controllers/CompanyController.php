@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 
 class CompanyController extends Controller
 {
+
+    function __construct()
+    {
+         $this->middleware('permission:company-list|company-create|company-edit|company-delete', ['only' => ['index','store']]);
+         $this->middleware('permission:company-create', ['only' => ['create','store']]);
+         $this->middleware('permission:company-edit', ['only' => ['edit','update']]);
+         $this->middleware('permission:company-delete', ['only' => ['destroy']]);
+    }
+
     public function index()
     {
         $company = Company::where('id', 1)->first();
