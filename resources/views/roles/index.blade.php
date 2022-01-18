@@ -33,7 +33,7 @@
                                     class="px-6 py-3 text-left text-xs font-bold text-gray-800 uppercase tracking-wider">
                                     Name
                                 </th>
-                                @can('user-edit')
+                                @can('role-edit')
                                 <th scope="col"
                                     class="px-6 py-3 text-left text-xs font-bold text-gray-800 uppercase tracking-wider">
                                     Action
@@ -47,7 +47,7 @@
                             <tr>
                                 <td class="px-6 py-4 text-gray-500 whitespace-nowrap">{{ $role->name }}</td>
                                 
-                                @can('user-edit')
+                                @can('role-edit')
                                 <td class="px-6 py-4 text-gray-500 whitespace-nowrap ">
                                     {{-- <a href="{{ route('users.show',$role->id) }}"><button
                                             class="text-white px-2 py-1 rounded bg-indigo-500 hover:bg-indigo-700 shadow-sm">Show</button></a>
