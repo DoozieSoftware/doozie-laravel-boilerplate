@@ -65,19 +65,17 @@
 
                     <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                         <label for="role" class="block text-sm font-medium text-gray-700">Role</label>
-                        <select id="role" name="roles" autocomplete="role"
+                        {{-- <select id="role" name="roles" autocomplete="role"
                             class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required
                             >
                            
-                            {{-- @foreach ($userRole as $r)
-                                <option value="{{$r}}" selected>{{$r}}</option>
-                            @endforeach --}}
                             <option value="">Select Role</option>
                             @foreach ($roles as $item)
                                 <option value="{{$item}}" {{ $userRole[0] == $item ? 'selected' : '' }}>{{$item}}</option>
                             @endforeach
                             
-                        </select>
+                        </select> --}}
+                        {!! Form::select('roles[]', $roles,$userRole, array('class' => 'mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm')) !!}
                     </div>
 
                
