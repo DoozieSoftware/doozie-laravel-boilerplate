@@ -148,12 +148,7 @@
 
 
 
-                    <a href="{{ URL::previous() }}">
-                        <button type="button"
-                            class="inline-flex justify-center py-2 px-14 border border-transparent shadow-sm text-sm font-semibold rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
-                            Back
-                        </button>
-                    </a>
+                    
                 </div>
             </div>
         </form>
