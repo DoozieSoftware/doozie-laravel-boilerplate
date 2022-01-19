@@ -14,7 +14,7 @@ class CompanySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('company')->insert([
             'name' => 'Doozie Software Solutions',
             'abbrevation' => 'dooziesoft',
             'domain' => NULL,
